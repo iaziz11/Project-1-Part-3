@@ -1,0 +1,255 @@
+/* Custom CSS for VisioAI Website */
+
+/* Global Styles */
+:root {
+  --primary-color: #4361ee;
+  --secondary-color: #3a0ca3;
+  --accent-color: #4cc9f0;
+  --text-color: #333;
+  --light-gray: #f8f9fa;
+  --medium-gray: #e9ecef;
+  --dark-gray: #6c757d;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logo-img {
+  margin-right: 10px;
+}
+
+/* Hero Sections */
+.hero-section {
+  padding: 80px 0;
+  background-color: var(--light-gray);
+}
+
+.hero-image {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-hero-section,
+.contact-hero-section {
+  background-color: var(--light-gray);
+  padding: 60px 0;
+}
+
+/* Feature Boxes */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonial Carousel */
+.testimonials {
+  background-color: var(--light-gray);
+}
+
+.testimonial-item {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.testimonial-text {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.rounded-circle {
+  border: 3px solid var(--primary-color);
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.cta-box {
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Timeline on About Page */
+.timeline-container {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.timeline-container::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background-color: var(--primary-color);
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  margin-left: -1px;
+}
+
+.timeline-item {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.timeline-badge {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 0;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.timeline-content {
+  padding: 15px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+/* Team Members */
+
+.team-member {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+}
+
+.team-member img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Value Cards */
+.value-icon {
+  color: var(--primary-color);
+}
+
+/* Contact Page */
+.contact-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+}
+
+.office-image-container {
+  margin-bottom: 20px;
+}
+
+.map-container {
+  height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* FAQ Accordion */
+.accordion-item {
+  margin-bottom: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Sign In Page */
+.signin-header {
+  margin-bottom: 40px;
+}
+
+.signin-benefits {
+  padding: 30px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+}
+
+.feature-box {
+  margin-bottom: 30px;
+}
+
+.feature-icon {
+  color: var(--primary-color);
+}
+
+/* Float Example - This will float to the right */
+.float-right-example {
+  float: right;
+  width: 300px;
+  margin: 0 0 20px 20px;
+  padding: 15px;
+  background-color: var(--light-gray);
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .float-right-example {
+    float: none;
+    width: 100%;
+    margin: 0 0 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .timeline-container::after {
+    left: 31px;
+  }
+}
